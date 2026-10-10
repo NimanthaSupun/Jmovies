@@ -60,4 +60,4 @@
         </div>
     </div>
 </footer>
-<script src="<%= request.getContextPath() %>/js/main.js?v=4.0"></script>
+<script src="<%= request.getContextPath() %>/js/main.js?v=4.2"></script>

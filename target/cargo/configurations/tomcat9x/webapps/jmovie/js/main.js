@@ -46,6 +46,10 @@ function initHeroSlider() {
         currentIndex = index;
     }
 
+    // The HTML order is the playback order. Reordering the slide markup should
+    // not depend on stale active classes or data-index values.
+    goToSlide(0);
+
     function nextSlide() { goToSlide(currentIndex + 1); }
     function prevSlide() { goToSlide(currentIndex - 1); }
 
@@ -67,9 +71,6 @@ function initHeroSlider() {
             startAutoplay();
         });
     });
-
-    slider.addEventListener('mouseenter', stopAutoplay);
-    slider.addEventListener('mouseleave', startAutoplay);
 
     // Touch Swipe Support for Mobile
     let touchStartX = 0;

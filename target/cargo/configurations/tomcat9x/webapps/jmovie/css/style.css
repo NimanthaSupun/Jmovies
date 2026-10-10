@@ -202,18 +202,23 @@ main { flex: 1; }
 
 .hero-content-wrap {
     position: absolute; inset: 0; z-index: 3;
-    display: flex; align-items: center;
+    display: flex; align-items: flex-end;
+    padding-bottom: clamp(92px, 12vh, 132px);
+    padding-left: 0;
 }
 .hero-text-container {
-    max-width: 760px; padding: 0;
+    max-width: 760px; padding: 0; margin-left: 0;
+    position: relative; left: -48px;
 }
 .hero-tag {
     font-size: 0.78rem; font-weight: 600; color: var(--plasma-lime);
     display: block; margin-bottom: 12px; text-shadow: 0 2px 10px rgba(0,0,0,0.95);
 }
 .hero-title {
-    font-size: 3.4rem; font-weight: 700; letter-spacing: -1px; margin-bottom: 18px;
-    line-height: 1.08; text-shadow: 0 4px 20px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.9); color: #ffffff;
+    font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 4.2rem);
+    font-weight: 700; letter-spacing: -0.04em; margin-bottom: 18px;
+    line-height: 1.02; text-wrap: balance;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.95), 0 2px 6px rgba(0,0,0,0.9); color: #ffffff;
 }
 .hero-sub {
     font-size: 1.05rem; color: #ffffff; margin-bottom: 32px; line-height: 1.6;
@@ -359,8 +364,10 @@ main { flex: 1; }
 /* ─── RESPONSIVE BREAKPOINTS ─────────────────────────────────────── */
 @media (max-width: 1024px) {
     .container-fluid { padding: 0 24px; }
+    .hero-content-wrap { padding-bottom: clamp(92px, 12vh, 120px); }
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
-    .hero-title { font-size: 2.6rem; }
+    .hero-content-wrap { padding-left: 0; }
+    .hero-text-container { left: -24px; }
     .admin-layout { grid-template-columns: 1fr; }
     .admin-sidebar { border-right: none; border-bottom: 1px solid var(--graphite-teal); flex-direction: row; justify-content: space-between; flex-wrap: wrap; }
 }
@@ -369,7 +376,10 @@ main { flex: 1; }
     .navbar__nav, .hide-mobile { display: none; }
     .mobile-toggle { display: flex; }
     .hero-slider { height: 65vh; min-height: 480px; }
-    .hero-title { font-size: 2rem; }
+    .hero-content-wrap { padding-bottom: 88px; }
+    .hero-content-wrap { padding-left: 16px; }
+    .hero-text-container { left: 0; }
+    .hero-title { font-size: clamp(2rem, 9vw, 2.8rem); }
     .hero-sub { font-size: 0.92rem; margin-bottom: 24px; }
     .movie-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -686,7 +696,3 @@ tbody tr:hover { background: rgba(38,59,66,0.5); }
     .seat-row { gap: 6px; }
     .seat-row__lbl { width: 22px; font-size: 0.75rem; }
 }
-
-
-
-

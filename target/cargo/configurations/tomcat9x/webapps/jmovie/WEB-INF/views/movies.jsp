@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<%= ctx %>/css/style.css?v=4.0">
+    <link rel="stylesheet" href="<%= ctx %>/css/style.css?v=4.4">
 </head>
 <body class="theme-frame">
 
@@ -31,14 +31,31 @@
     <!-- HERO SLIDER SECTION (AUTOPLAY CAROUSEL WITH HIGH VISIBILITY BACKGROUND PHOTOS) -->
     <section class="hero-slider" id="hero-slider" aria-label="JMovie Cinema Carousel">
         <div class="slider-wrapper" id="slider-wrapper">
-            <!-- Slide 1: House of the Dragon -->
-            <div class="slide active" data-index="0">
-                <div class="slide__bg" style="background-image: url('<%= ctx %>/images/house-of-the-dragon-7680x3200-17464.jpg');"></div>
-            </div>
 
             <!-- Slide 2: Oppenheimer -->
             <div class="slide" data-index="1">
                 <div class="slide__bg" style="background-image: url('<%= ctx %>/images/oppenheimer-black-3840x2160-15916.jpeg');"></div>
+            </div>
+
+             <!-- Slide 4: Sadie Sink / Cinematic Art -->
+            <div class="slide" data-index="3">
+                <div class="slide__bg" style="background-image: url('<%= ctx %>/images/sadie-sink-jean-7680x4320-26963.jpg');"></div>
+            </div>
+
+            <!-- Slide 3: Blade Runner 2049 -->
+            <div class="slide" data-index="5">
+               <div class="slide__bg" style="background-image: url('<%= ctx %>/images/wp12002181-bladerunner-2049-4k-computer-wallpapers.jpg');"></div>
+            </div>
+
+            <!-- Slide 4: Dune Part Two -->
+            <div class="slide" data-index="6">
+               <div class="slide__bg" style="background-image: url('<%= ctx %>/images/dune-2-timothee-5120x2880-15792.jpg');"></div>
+            </div>
+
+
+            <!-- Slide 1: House of the Dragon -->
+            <div class="slide active" data-index="0">
+                <div class="slide__bg" style="background-image: url('<%= ctx %>/images/house-of-the-dragon-7680x3200-17464.jpg');"></div>
             </div>
 
             <!-- Slide 3: Peaky Blinders -->
@@ -46,15 +63,20 @@
                 <div class="slide__bg" style="background-image: url('<%= ctx %>/images/peaky-blinders-tv-4491x2526-14931.jpg');"></div>
             </div>
 
-            <!-- Slide 4: Sadie Sink / Cinematic Art -->
-            <div class="slide" data-index="3">
-                <div class="slide__bg" style="background-image: url('<%= ctx %>/images/sadie-sink-jean-7680x4320-26963.jpg');"></div>
-            </div>
-
+           
             <!-- Slide 5: High-Res Movie Banner -->
             <div class="slide" data-index="4">
                 <div class="slide__bg" style="background-image: url('<%= ctx %>/images/1410488.jpg');"></div>
             </div>
+
+            <!-- Slide 8: Cinema Artwork -->
+            <div class="slide" data-index="7">
+                <div class="slide__bg" style="background-image: url('<%= ctx %>/images/1409095.jpg');"></div>
+            </div>
+
+
+
+
         </div>
 
         <div class="slide__overlay"></div>
@@ -222,7 +244,7 @@
                 <!-- Article Card 1 -->
                 <article class="article-card scroll-reveal">
                     <div class="article-card__img-wrap">
-                        <img src="<%= ctx %>images.jpeg" alt="Article 1" loading="lazy">
+                        <img src="<%= ctx %>/images/images.jpeg" alt="Article 1" loading="lazy">
                     </div>
                     <div class="article-card__body">
                         <div class="article-meta mono-text">
