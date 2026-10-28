@@ -198,3 +198,4 @@ jmovie/
             │   └── views/                   # Application JSPs (movies, seat layout, admin dashboard)
             └── css/                         # Custom dark-theme CSS stylesheet
 ```
+// new 
