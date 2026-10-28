@@ -21,6 +21,7 @@ com/jmovie/model/User.class
 com/jmovie/db/DBConnection.class
 com/jmovie/db/DatabaseInit.class
 com/jmovie/model/Booking.class
+com/jmovie/model/Payment.class
 com/jmovie/servlet/BookingServlet.class
 com/jmovie/model/RegularUser.class
 com/jmovie/util/AppInitializer.class

@@ -6,6 +6,7 @@
 /home/nimantha/code/jmovie/src/main/java/com/jmovie/db/DatabaseInit.java
 /home/nimantha/code/jmovie/src/main/java/com/jmovie/model/Booking.java
 /home/nimantha/code/jmovie/src/main/java/com/jmovie/db/ShowtimeDAO.java
+/home/nimantha/code/jmovie/src/main/java/com/jmovie/model/Payment.java
 /home/nimantha/code/jmovie/src/main/java/com/jmovie/util/IdGenerator.java
 /home/nimantha/code/jmovie/src/main/java/com/jmovie/model/Seat.java
 /home/nimantha/code/jmovie/src/main/java/com/jmovie/servlet/ShowtimeServlet.java
